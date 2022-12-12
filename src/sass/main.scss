@@ -6,7 +6,7 @@
     height: 20px;
 }
 
-.menu{
+#menu{
     position: fixed;
     top: 0 ;
     border-top: 30px solid rgb(52, 53, 51) ;
@@ -90,3 +90,5 @@ nav {
 
 
 }
+
+@import 'medios';

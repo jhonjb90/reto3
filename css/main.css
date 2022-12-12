@@ -58,6 +58,10 @@ h3 {
   margin-bottom: 10px;
   font-size: 1.5rem;
   font-weight: 500;
+  transition: transform 100ms;
+}
+.btn:hover, .btn-secundario:hover, .btn-principal:hover {
+  transform: scale(1.1);
 }
 
 .btn-principal {
@@ -74,7 +78,7 @@ h3 {
   height: 20px;
 }
 
-.menu {
+#menu {
   position: fixed;
   top: 0;
   border-top: 30px solid rgb(52, 53, 51);
@@ -140,6 +144,50 @@ nav ul a:hover {
 .servicios .servicios__tipo i {
   font-size: 30px;
   color: #6495ed;
+}
+
+.footer {
+  min-height: 80px;
+  background-color: rgb(52, 53, 53);
+  margin-top: 0;
+}
+.footer .footer__contenido {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 1400px) {
+  nav, .servicios, .presentacion, .footer__contenido {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media (max-width: 992px) {
+  .presentacion, .servicios__tipo {
+    flex-direction: column;
+  }
+  .presentacion div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 420px) {
+  .presentacion div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .presentacion div h1, .presentacion div p {
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
