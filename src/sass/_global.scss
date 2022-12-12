@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
+//variables
+
+$font-p: 3.0rem;
+$font-h1: 3.0rem;
+$font-h2: 2.4rem;
+$font-h3: 2.0rem;
+$color-primary: rgb(134, 132, 132);
+
+
+//propiedades globales
+
 :root{
     font-size: 62.5%;
 }
@@ -18,7 +29,7 @@ ul{
 a{
     text-decoration: none;
     display: inline-block;
-    color:rgb(134, 132, 132)
+    color:$color-primary;
 }
 
 img{
@@ -33,4 +44,42 @@ container{
 
 .servicios__titulo, .presentacion{
     margin-bottom: 10%;
+}
+
+
+
+p{
+    font-size: $font-p;
+    color: $color-primary;
+}
+
+h2 {
+    font-size: $font-h2;
+}
+
+h3 {
+    font-size: $font-h3;
+    font-weight: lighter;
+}
+
+.btn{
+    border: none;
+    border-radius: 2px;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.btn-principal{
+    @extend .btn;
+    color: #fff;
+    background-color: #6495ed;
+}
+
+.btn-secundario{
+    @extend .btn;
+    background-color: $color-primary;
 }
