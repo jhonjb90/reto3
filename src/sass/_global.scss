@@ -20,6 +20,7 @@ body{
     padding: 0;
     line-height: 1.6;
     font-family: 'Noto Sans JP', sans-serif ;
+    background: url('/assets/img/fondo.png');
 }
 
 ul{
@@ -37,7 +38,7 @@ img{
     height: auto;
 }
 
-container{
+.container{
     width: 80%;
     margin: auto;
 }
@@ -82,4 +83,13 @@ h3 {
 .btn-secundario{
     @extend .btn;
     background-color: $color-primary;
+}
+
+// USO DE MIXINS EN SASS;
+
+@mixin caja-flex($principal, $cruzado, $wrap){
+    display: flex;
+    justify-content: $principal;
+    align-items: $cruzado;
+    flex-wrap: $wrap;
 }
