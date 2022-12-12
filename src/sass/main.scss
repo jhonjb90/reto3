@@ -76,3 +76,17 @@ nav {
         }
     }
 }
+
+.footer{
+    min-height: 80px;
+    background-color: rgb(52, 53, 53);
+    margin-top: 0;
+
+    .footer__contenido{
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
+}
